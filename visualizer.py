@@ -26,8 +26,9 @@ for name, (d, v) in galaxies.items():
     plt.scatter(d, v, color = 'red', zorder = 5, s = 50) # plot the dot, red dots size 50
     plt.annotate(name, (d, v), textcoords = "offset points",
                  xytext = (10, 5), color = 'white', fontsize = 8) # label it
-plt.show() # Render and display the plot window
+
 plt.savefig('hubble.png', dpi = 300)
+plt.show() # Render and display the plot window
 
 
 
